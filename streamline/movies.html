@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamline</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Tahoma (sans-seriaf);
+         background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20220218/pngtree-classic-simple-retro-used-rice-paper-kraft-paper-stain-background-image_963636.jpg");
+            color: #fff;
+        }
+
+        header {
+            background-image: url("https://t4.ftcdn.net/jpg/08/58/69/13/360_F_858691375_iASliDBLyB3vOVNH2iIHaabhIkNxKGZD.jpg");
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2em;
+            font-style: italic;
+        }
+
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #0931e5;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #e50914;
+        }
+
+        .content-item {
+            margin-bottom: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            justify-content: space-between;
+            display: flex;
+        }
+       
+        .content-item img{
+            width: 10%;
+            height:auto;
+          
+        }
+
+        footer {
+            background-color: RED;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            color: #8e8e8e;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+         MOVIES ROOM
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="http://127.0.0.1:5500/mainpage.html">Home</a>
+        <a href="#">Movies</a>
+        <a href="http://127.0.0.1:5500/series.html">Series</a>
+        <a href="#">My List</a>
+        <a href="#">Favourite</a>
+        
+    </nav>
+ 
+    <!-- Main Content Section -->
+    <main>
+<form id="search-form">
+        <input type="text" id="search-bar" placeholder="Search for movies, series, etc.">
+        <button type="button" id="search-button" onclick="searchContent()">Search</button>
+        
+    </form>
+        <!-- Featured Section -->
+        <section>
+            <h2>
+                Top Movies
+            </h2>
+           
+            <div class="content-item">
+                <img src="https://m.media-amazon.com/images/S/pv-target-images/f5a21f64af7359f7aaa7c29dee8a12a97630e707cdbf71e0ae6b063322fb8575.jpg">
+                <img src="https://luisdias.wordpress.com/wp-content/uploads/2024/03/12th-fail.jpg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHJXzBPVdJQyxsQAy7Q9WMIfgTWr22ghnr1w&s">
+                <img src="https://m.media-amazon.com/images/M/MV5BNzc4ZWQ3NmYtODE0Ny00YTQ4LTlkZWItNTBkMGQ0MmUwMmJlXkEyXkFqcGc@._V1_.jpg">
+                <img src="https://upload.wikimedia.org/wikipedia/en/4/46/Arjun_Reddy.jpg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj2-OT9WUXGMoiy8lXmy6ldbrhMDgFAEi0uA&s">
+            </div>
+        </section>
+
+        <!-- Trending Section -->
+        <section>
+            <h2>Trending Now</h2>
+            <div class="content-item">
+              <img src="https://m.media-amazon.com/images/M/MV5BYzdmNzBjMDgtMmJkNC00ZjU3LTgxZTctY2QyOTkxMTFhOTU5XkEyXkFqcGc@._V1_QL75_UX190_CR0,8,190,281_.jpg">
+              <img src="https://m.media-amazon.com/images/M/MV5BZTEyYzVjYjEtNWYzZi00NWRhLTgyZjUtNDlkZjBiNWIxYTEwXkEyXkFqcGc@._V1_.jpg">
+              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c5/Premalu_film_poster.jpg/220px-Premalu_film_poster.jpg">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT12ydjC8Yg3XDJbSWzlEzXQcX8jLysbH6P_Q&s">
+              <img src="https://m.media-amazon.com/images/M/MV5BY2FjMTJmNDItZWNjZS00YmVkLTliZjQtNWI3M2ZkY2Q3OTE2XkEyXkFqcGc@._V1_.jpg">
+              <img src="https://m.media-amazon.com/images/M/MV5BNzIxMTU5YzYtNzBkMy00NzAxLTgyMzUtZjc5MWJlZmM3MDFhXkEyXkFqcGc@._V1_.jpg">
+                
+            </div>
+            <!-- Add more trending content items as needed -->
+        </section>
+
+        <!-- Recommended Section -->
+        <section>
+            <h2>Recommended for You</h2>
+            <div class="content-item">
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/99/Manjummel_Boys_poster.jpg">
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-250,h-390/et00329656-sfyrqqnacg-portrait.jpg">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTAxZmRjZmUtNmE3Ni00MjZjLWJmNTYtNTczYWM1OTQ4ZTViXkEyXkFqcGc@._V1_.jpg">
+                <img src="https://upload.wikimedia.org/wikipedia/en/3/33/M.S._Dhoni_-_The_Untold_Story_poster.jpg">
+                <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/hit-the-2nd-case-et00327635-02-05-2022-03-35-58.jpg">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Kee_Poster.jpg/220px-Kee_Poster.jpg">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTM3NjA1NDMyMV5BMl5BanBnXkFtZTcwMDQzNDMzOQ@@._V1_.jpg">
+                <img src="https://upload.wikimedia.org/wikipedia/en/2/23/Bhool_Bhulaiyaa_2_film_poster.jpg">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg">
+            </div>
+            <!-- Add more recommended content items as needed -->
+        </section>
+
+    </main>
+</body>
+</html>

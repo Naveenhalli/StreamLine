@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamline</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Tahoma (sans-seriaf);
+            background-image: url("https://t4.ftcdn.net/jpg/08/58/69/13/360_F_858691375_iASliDBLyB3vOVNH2iIHaabhIkNxKGZD.jpg");
+            color: #fff;
+        }
+
+        header {
+           background-color: #c03457;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #0931e5;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #e50914;
+        }
+
+        .content-item {
+            margin-bottom: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            justify-content: space-between;
+            display: flex;
+        }
+       .content-item:hover{
+        background-color: rgb(223, 174, 83);
+       }
+        .content-item img{
+            width: 10%;
+            height:auto;
+          
+        }
+
+        footer {
+            background-color: RED;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            color: #8e8e8e;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+         SERIES ROOM
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="http://127.0.0.1:5500/mainpage.html">Home</a>
+        <a href="http://127.0.0.1:5500/movies.html">Movies</a>
+        <a href="#">Series</a>
+        <a href="#">My List</a>
+        <a href="#">Favourite</a>
+        
+    </nav>
+ 
+    <!-- Main Content Section -->
+    <main>
+<form id="search-form">
+        <input type="text" id="search-bar" placeholder="Search for movies, series, etc.">
+        <button type="button" id="search-button" onclick="searchContent()">Search</button>
+        
+    </form>
+        <!-- Featured Section -->
+        <section>
+            <h2>
+                Top web series
+            </h2>
+           
+            <div class="content-item">
+                <img src="https://img.etimg.com/photo/111511534/111511534.jpg">
+                <img src="https://www.justwatch.com/images/poster/307006941/s718/asur.jpg" >
+                <img src="https://m.media-amazon.com/images/M/MV5BOGY3NTg1ODMtOGIzZS00YWFiLTgzYzktNzBiYWZkYjcwNGRhXkEyXkFqcGc@._V1_.jpg">
+                <img src="https://image.tmdb.org/t/p/original/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg">
+                <img src="https://assets.gadgets360cdn.com/pricee/assets/product/202111/theboys-250_1636632874.jpg">
+                <img src="https://www.justwatch.com/images/poster/252184951/s718/squid-game.jpg">
+                <img src="https://resizing.flixster.com/0xxuABVVuzJrUT130WFHKE-irEg=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vNzUyMTFhOTktZTU4Ni00ODkyLWJlYjQtZTgxYTllZmU2OGM0LmpwZw==">
+                <img src="https://www.justwatch.com/images/poster/303328524/s718/farzi.jpg">
+                <img src="https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
+            </div>
+        </section>
+
+        <!-- Trending Section -->
+        <section>
+            <h2>Trending Now</h2>
+            <div class="content-item">
+                <img src="https://m.media-amazon.com/images/M/MV5BNjAzMDEzZmUtYjgzMy00NTYxLWJlODItYTMyZGI4YzdmZGY4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
+                <img src="https://m.media-amazon.com/images/M/MV5BNGRkOTVjODgtNTBmZS00MDQ3LWE3ZjQtM2ZiNDQ3OWJkMjM2XkEyXkFqcGc@._V1_.jpg">
+                <img src="https://images.slivcdn.com/videoasset_images/blitz_assets/1700001283/portraitThumb/1717235763479_scam2003thetelgistory_1may_portrati_thumb.jpg?w=360&q=low">
+                <img src="https://m.media-amazon.com/images/I/81xETRmcFwL._AC_UF1000,1000_QL80_.jpg">
+                <img src="https://i.scdn.co/image/ab67616d0000b273bdab327ceda7f3f61187e962">
+                <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p22229698_b_v13_ac.jpg">
+                
+            </div>
+            <!-- Add more trending content items as needed -->
+        </section>
+
+        <!-- Recommended Section -->
+        <section>
+            <h2>Recommended for You</h2>
+            <div class="content-item">
+                <img src="https://m.media-amazon.com/images/M/MV5BMDc3NWMwNGMtYjc3Mi00NzU5LWFiYjgtMTJjZGE3ZmFiNzRjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYSiPpwiGKbKTbMpatcx6811gpwDcF7EwP_g&s">
+                <img src="https://m.media-amazon.com/images/S/pv-target-images/8072306efd5621aed05826d59c4a04845fafec0e46cc220f613a5385d5d399b2.jpg">
+                <img src="https://m.media-amazon.com/images/M/MV5BNTM5NTVjMjMtOTdhZC00YjliLWJiN2MtYjlkMjViZjMwMjJjXkEyXkFqcGc@._V1_.jpg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAhwb397K2k8Ioso42qDhbLnp-ph_exwqpzg&s">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXUWn4yZbmL8W_TIPDa7Qmxx20IY_iwNLf-A&s">
+            </div>
+            <!-- Add more recommended content items as needed -->
+        </section>
+
+    </main>
+</body>
+</html>

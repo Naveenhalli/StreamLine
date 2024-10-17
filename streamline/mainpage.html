@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamline</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Tahoma (sans-seriaf);
+            background-color: #1f1f1f;
+            color: #fff;
+        }
+
+        header {
+            background-color: #DC143C;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #0931e5;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #e50914;
+        }
+
+        .content-item {
+            margin-bottom: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            justify-content: space-between;
+        }
+
+        .content-item img {
+            width: 10%;
+            height:auto;
+            
+        }
+
+        footer {
+            background-color: RED;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            color: #8e8e8e;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        STREAM LINE
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="http://127.0.0.1:5500/mainpage.html">Home</a>
+        <a href="http://127.0.0.1:5500/movies.html">Movies</a>
+        <a href="http://127.0.0.1:5500/series.html">Series</a>
+        <a href="#">My List</a>
+        <a href="#">Favourite</a>
+        
+    </nav>
+ 
+    <!-- Main Content Section -->
+    <main>
+<form id="search-form">
+        <input type="text" id="search-bar" placeholder="Search for movies, series, etc.">
+        <button type="button" id="search-button" onclick="searchContent()">Search</button>
+        
+    </form>
+        <!-- Featured Section -->
+        <section>
+            <h2>Featured Content</h2>
+            <div class="content-item">
+                <img src="https://www.cityairnews.com/uploads/images/image-750x-2023-08-13-01:07:58pm-64d888563c111.jpg"><p>PUSHPA-2</p>
+                <img src="https://m.media-amazon.com/images/M/MV5BYmIxMGNmOGYtMDQ4ZS00N2M0LWFiNWMtMWVlYjVkNzkzODc4XkEyXkFqcGc@._V1_.jpg" alt="Featured Content"><P>VENOM-3</P>
+                <img src="https://images.filmibeat.com/img/popcorn/movie_posters/toxic-20231208161412-22403.jpg" alt="Featured Content"><P>TOXIC</P>
+                <!-- Additional details or buttons can be added here -->
+            </div>
+        </section>
+
+        <!-- Trending Section -->
+        <section>
+            <h2>Trending Now</h2>
+            <div class="content-item">
+                <img src="https://m.media-amazon.com/images/M/MV5BNWFjMDE3ZGItYjg2NC00ODExLThjMmUtYjA5MWY2YTAxMjVhXkEyXkFqcGc@._V1_.jpg" alt="Trending Movie">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv_LLZdSy5xhfL3Nv_Qi_yGPVHwTxltswKew&s" alt="Trending Movie">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Double_iSmart.jpg/220px-Double_iSmart.jpg" alt="Trending Movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BZWEwNmYwYTAtMmQxYS00ZTgwLWE0NmUtNGIwZDEyZmYwN2EwXkEyXkFqcGc@._V1_.jpg" alt="Trending Movie">
+                <!-- Additional details or buttons can be added here -->
+            </div>
+            <!-- Add more trending content items as needed -->
+        </section>
+
+        <!-- Recommended Section -->
+        <section>
+            <h2>Recommended for You</h2>
+            <div class="content-item">
+                <img src="https://static.toiimg.com/thumb/105240252.cms?width=170&height=240&imgsize=15808" alt="Recommended Series">
+                <img src="https://m.media-amazon.com/images/M/MV5BMDkyNGE1OWEtZDg0ZC00MThjLThlYmYtNDhiNGNjMzQ1ZTcyXkEyXkFqcGc@._V1_.jpg" alt="Recommended Series">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjFkYThiNDMtMmFhYS00ZjQ5LWJjZjMtZmQ3ODAxYmIwM2RlXkEyXkFqcGc@._V1_.jpg" alt="Recommended Series">
+
+                 <!-- Additional details or buttons can be added here -->
+            </div>
+            <!-- Add more recommended content items as needed -->
+        </section>
+
+    </main>
+</body>
+</html>
